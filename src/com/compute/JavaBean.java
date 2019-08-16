@@ -78,7 +78,7 @@ public class JavaBean {
 	}
 	
 	private void Compute() {
-		termgrade_raw = Math.round((Integer.parseInt(getMidterms_raw()) * 0.5) + (Integer.parseInt(getPrefinals_raw()) * 0.5));
+		termgrade_raw = Math.round((Integer.parseInt(getMidterms_raw().trim()) * 0.5) + (Integer.parseInt(getPrefinals_raw().trim()) * 0.5));
 		if (termgrade_raw <= 69 && termgrade_raw >= 0) {
 			setDecimalgrade(5.0);
 			setRemarks("<p class='text-danger'><b>Failed</b></p>");

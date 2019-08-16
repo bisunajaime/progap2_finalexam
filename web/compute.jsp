@@ -37,10 +37,6 @@ p{
 				|| Integer.parseInt(grade.getPrefinals_raw().trim()) > 100){
 			throw new InvalidInputGradeException();
 		}else{
-			grade.setFirstname(grade.getFirstname());
-			grade.setLastname(grade.getLastname());
-			grade.setMidterms_raw(grade.getMidterms_raw().trim());
-			grade.setPrefinals_raw(grade.getPrefinals_raw().trim());
 			grade.Facade();
 		}
 	}catch(Exception e){
